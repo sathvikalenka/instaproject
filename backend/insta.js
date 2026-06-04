@@ -227,7 +227,7 @@ app.get("/users", async (req, res) => {
     await User.find();
   res.json(users);
 });
-app.listen(5000, () => {
+app.listen(process.env.PORT, () => {
   console.log(
     "Server Running On Port 5000"
   );
