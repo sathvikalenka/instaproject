@@ -21,7 +21,7 @@ function Feed() {
 }
   useEffect(() => {
     axios.get(
-      "http://localhost:5000/posts"
+      "https://instaproject-backend.onrender.com/posts"
     )
     .then((res) => {
       setPosts(res.data);
@@ -30,7 +30,7 @@ function Feed() {
   const handleLike =
     async (id) => {
     await axios.put(
-      `http://localhost:5000/like/${id}`,
+      `https://instaproject-backend.onrender.com/like/${id}`,
       {
         userid: user._id
       }
@@ -42,7 +42,7 @@ function Feed() {
     const text =
       prompt("Enter Comment");
     await axios.post(
-      `http://localhost:5000/comment/${id}`,
+      `https://instaproject-backend.onrender.com/comment/${id}`,
       {
         userid: user._id,
         text

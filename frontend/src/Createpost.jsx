@@ -23,7 +23,7 @@ function Createpost() {
   const handlePost =
     async () => {
     await axios.post(
-      "http://localhost:5000/createpost",
+      "https://instaproject-backend.onrender.com/createpost",
       {
         userid: user._id,
         image,

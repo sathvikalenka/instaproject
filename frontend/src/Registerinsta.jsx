@@ -20,7 +20,7 @@ function Register() {
     e.preventDefault();
     const res =
       await axios.post(
-        "http://localhost:5000/register",
+        "https://instaproject-backend.onrender.com/register",
         {
           username,
           email,

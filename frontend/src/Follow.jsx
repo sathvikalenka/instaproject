@@ -18,7 +18,7 @@ function Follow() {
 }
   useEffect(() => {
     axios.get(
-      "http://localhost:5000/users"
+      "https://instaproject-backend.onrender.com/users"
     )
     .then((res) => {
       setUsers(res.data);
@@ -27,7 +27,7 @@ function Follow() {
   const handleFollow =
     async (id) => {
     await axios.put(
-      `http://localhost:5000/follow/${id}`,
+      `https://instaproject-backend.onrender.com/follow/${id}`,
       {
         userid:
           currentUser._id

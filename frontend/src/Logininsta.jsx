@@ -18,7 +18,7 @@ function Login() {
     e.preventDefault();
     const res =
       await axios.post(
-        "http://localhost:5000/login",
+        "https://instaproject-backend.onrender.com/login",
         {
           email,
           password
